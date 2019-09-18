@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Simple GIFT question creation tool</title>
+        <script language="JavaScript" src="simplegift.js"></script>
+    </head>
+    <body>
+        <h1>Simple GIFT question creation tool</h1>
+        <form>
+            Question Title: <input type="text" name="qTitle" size="60"><br>
+            Question Text: <textarea rows="2" cols="50" name="qText"></textarea><br>
+            <table>
+                <tr>
+                    <th>Correct Answer</th>
+                    <th>Answer Text</th>
+                    <th>Citation</th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="correctAnswer" value="answerA"></th>
+                    <th><input type="text" name="answerA" class="answer" size="50"></th>
+                    <th><input type="text" name="citationA" size="50"></th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="correctAnswer" value="answerB"></th>
+                    <th><input type="text" name="answerB" class="answer" size="50"></th>
+                    <th><input type="text" name="citationB" size="50"></th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="correctAnswer" value="answerC"></th>
+                    <th><input type="text" name="answerC" class="answer" size="50"></th>
+                    <th><input type="text" name="citationC" size="50"></th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="correctAnswer" value="answerD" size="50"></th>
+                    <th><input type="text" name="answerD" class="answer" size="50"></th>
+                    <th><input type="text" name="citationD" size="50"></th>
+                </tr>
+            </table>
+            <input type="button" value="Generate GIFT" onClick="generateGIFT(this.form);">
+        </form>
+        <p>Your GIFT formatted question will appear below.</p>
+        <p id="demo"></p>
+    </body>
+</html>
