@@ -8,4 +8,4 @@ This javascript program assists in the creation of correctly formatted GIFT ques
 
 The program runs entirely in browser javascript so no web server or server-side scripting is required.
 
-You can demo the program on the Github project page for this project.
+You can demo the program on the Github [project page for this project](https://bfranske.github.io/simpeGIFT/).
